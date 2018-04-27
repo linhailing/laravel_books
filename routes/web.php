@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/sms', function (){
+    $sms = new \App\Tools\SMS\Sms();
+    $sms->sendTemplateSMS('18721186620',['1234','5'], '1');
+    return "发送短信";
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

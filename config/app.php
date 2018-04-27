@@ -80,6 +80,14 @@ return [
 
     'locale' => 'zh_CN',
 
+    //容联·云通讯 发送短信接口
+    'accountSid' => '8aaf070862fae1b5016305261a740490',
+    'accountToken' => 'cb23c85bde9e4b62956eadbea3fea724',
+    'sms_appId' => '8aaf070862fae1b5016305261ad40497',
+    'serverIP' =>'app.cloopen.com',
+    'serverPort' => '8883',
+    'softVersion' =>'2013-12-26',
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
