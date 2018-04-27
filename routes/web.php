@@ -21,6 +21,12 @@ Route::get('/sms', function (){
     return "发送短信";
 });
 
+Route::get('/code', function (){
+    $_vc = new \App\Tools\ValidateCode();  //实例化一个对象
+    echo $_vc->doimg();
+    return "code";
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
