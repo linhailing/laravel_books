@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index');
+Route::get('/detail', 'WelcomeController@detail');
 
 Route::get('/sms', function (){
     $sms = new \App\Tools\SMS\Sms();
